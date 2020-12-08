@@ -7,24 +7,12 @@ applications:
         preBuild:
           commands:
             - yarn
-        build:
-          commands:
-            - yarn build
-      artifacts:
-        baseDirectory: out
-        files:
-          - "**/*"
-      cache:
-        paths:
-          - node_modules/**/*
-  - appRoot: app-b
-    frontend:
-      phases:
-        preBuild:
-          commands:
+            - cd ../app-b
             - yarn
         build:
           commands:
+            - yarn build
+            - cd ../app-b
             - yarn build
       artifacts:
         baseDirectory: out
