@@ -12,7 +12,7 @@ applications:
         build:
           commands:
             - yarn build
-            - cd ../app-b
+            - cd ../app-a
             - yarn build
       artifacts:
         baseDirectory: out
