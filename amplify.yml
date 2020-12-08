@@ -16,24 +16,24 @@ applications:
             - yarn build
       artifacts:
         files:
-            - "**/*"
+            - '**/*'        
         baseDirectory: dist
       cache:
         paths:
           - node_modules/**/*
 
-  - appRoot: next-app
+  - appRoot: next-app    
     frontend:
       phases:
         preBuild:
           commands:
-            - yarn install
+            - yarn install            
         build:
           commands:
             - yarn build
       artifacts:
         files:
-            - "**/*"
+            - '**/*'
         baseDirectory: out
       cache:
         paths:
