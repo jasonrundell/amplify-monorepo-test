@@ -10,9 +10,6 @@ applications:
         build:
           commands:
             - yarn build
-        postBuild:
-          commands:
-            - echo Have a nice day :)
       artifacts:
         baseDirectory: public
         files:
@@ -29,9 +26,6 @@ applications:
         build:
           commands:
             - yarn build
-        postBuild:
-          commands:
-            - echo Have a nice day :)
       artifacts:
         baseDirectory: public
         files:
