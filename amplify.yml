@@ -1,6 +1,11 @@
 version: 1
 applications:
   - appRoot: vue-app
+    backend:
+      phases:
+        build:
+          commands:
+            - amplifyPush --simple
     frontend:
       phases:
         preBuild:
@@ -12,11 +17,11 @@ applications:
       artifacts:
         files:
           - "**/*"
-        discard-paths: yes
         baseDirectory: dist
       cache:
         paths:
           - node_modules/**/*
+
   - appRoot: next-app
     frontend:
       phases:
@@ -29,7 +34,6 @@ applications:
       artifacts:
         files:
           - "**/*"
-        discard-paths: yes
         baseDirectory: out
       cache:
         paths:
