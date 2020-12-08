@@ -17,7 +17,7 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-  - appRoot: /my-gatsby-site
+  - appRoot: /next-app
     frontend:
       phases:
         preBuild:
@@ -30,7 +30,7 @@ applications:
         files:
           - "**/*"
         discard-paths: yes
-        baseDirectory: public
+        baseDirectory: out
       cache:
         paths:
           - node_modules/**/*
