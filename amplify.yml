@@ -6,6 +6,7 @@ applications:
       phases:
         preBuild:
           commands:
+            - cd app-a
             - yarn
             - cd ../app-b
             - yarn
