@@ -12,7 +12,7 @@ applications:
             - yarn build
         postBuild:
           commands:
-            - echo "Haver a nice day :)"
+            - echo Have a nice day :)
       artifacts:
         baseDirectory: public
         files:
@@ -31,7 +31,7 @@ applications:
             - yarn build
         postBuild:
           commands:
-            - echo "Haver a nice day :)"
+            - echo Have a nice day :)
       artifacts:
         baseDirectory: public
         files:
