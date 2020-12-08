@@ -11,7 +11,7 @@ applications:
           commands:
             - yarn build
       artifacts:
-        baseDirectory: public
+        baseDirectory: out
         files:
           - "**/*"
       cache:
@@ -27,7 +27,7 @@ applications:
           commands:
             - yarn build
       artifacts:
-        baseDirectory: public
+        baseDirectory: out
         files:
           - "**/*"
       cache:
