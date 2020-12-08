@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: /vue-app
+  - appRoot: vue-app
     frontend:
       phases:
         preBuild:
@@ -17,7 +17,7 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-  - appRoot: /next-app
+  - appRoot: next-app
     frontend:
       phases:
         preBuild:
