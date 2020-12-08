@@ -22,3 +22,19 @@ applications:
         paths:
           - node_modules/**/*
     appRoot: vue-app
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn install
+        build:
+          commands:
+            - yarn run build
+      artifacts:
+        baseDirectory: public
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: my-gatsby-site
