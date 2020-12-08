@@ -1,0 +1,17 @@
+{
+  "projectName": "vue-app",
+  "version": "3.0",
+  "frontend": "javascript",
+  "providers": [
+    "awscloudformation"
+  ],
+  "javascript": {
+    "framework": "vue",
+    "config": {
+      "SourceDir": "src",
+      "DistributionDir": "dist",
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": "npm.cmd run-script serve"
+    }
+  }
+}
