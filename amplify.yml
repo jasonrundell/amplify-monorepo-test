@@ -1,11 +1,6 @@
 version: 1
 applications:
-  - backend:
-      phases:
-        build:
-          commands:
-            - "# Execute Amplify CLI with the helper script"
-            - amplifyPush --simple
+  - appRoot: vue-app
     frontend:
       phases:
         preBuild:
@@ -13,7 +8,7 @@ applications:
             - yarn install
         build:
           commands:
-            - yarn run build
+            - yarn build
       artifacts:
         baseDirectory: dist
         files:
@@ -21,15 +16,15 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: vue-app
-  - frontend:
+  - appRoot: my-gatsby-site
+    frontend:
       phases:
         preBuild:
           commands:
             - yarn install
         build:
           commands:
-            - yarn run build
+            - yarn build
       artifacts:
         baseDirectory: public
         files:
@@ -37,4 +32,3 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-    appRoot: my-gatsby-site
