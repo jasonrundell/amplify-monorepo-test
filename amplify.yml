@@ -6,13 +6,13 @@ applications:
       phases:
         preBuild:
           commands:
-            - yarn run ci:pre
+            - yarn
         build:
           commands:
-            - yarn run ci:build
+            - yarn build
         postBuild:
           commands:
-            - yarn run ci:post
+            - echo "Haver a nice day :)"
       artifacts:
         baseDirectory: public
         files:
@@ -25,13 +25,13 @@ applications:
       phases:
         preBuild:
           commands:
-            - yarn run ci:pre
+            - yarn
         build:
           commands:
-            - yarn run ci:build
+            - yarn build
         postBuild:
           commands:
-            - yarn run ci:post
+            - echo "Haver a nice day :)"
       artifacts:
         baseDirectory: public
         files:
