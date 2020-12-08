@@ -16,7 +16,7 @@ applications:
             - yarn build
       artifacts:
         files:
-          - "**/*"
+            - "**/*"
         baseDirectory: dist
       cache:
         paths:
@@ -33,7 +33,7 @@ applications:
             - yarn build
       artifacts:
         files:
-          - "**/*"
+            - "**/*"
         baseDirectory: out
       cache:
         paths:
