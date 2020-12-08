@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: vue-app
+  - appRoot: /vue-app
     frontend:
       phases:
         preBuild:
@@ -10,13 +10,14 @@ applications:
           commands:
             - yarn build
       artifacts:
-        baseDirectory: dist
         files:
           - "**/*"
+        discard-paths: yes
+        baseDirectory: dist
       cache:
         paths:
           - node_modules/**/*
-  - appRoot: my-gatsby-site
+  - appRoot: /my-gatsby-site
     frontend:
       phases:
         preBuild:
@@ -26,9 +27,10 @@ applications:
           commands:
             - yarn build
       artifacts:
-        baseDirectory: public
         files:
           - "**/*"
+        discard-paths: yes
+        baseDirectory: public
       cache:
         paths:
           - node_modules/**/*
