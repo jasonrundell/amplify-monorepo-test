@@ -1,0 +1,41 @@
+version: 1
+
+applications:
+  - appRoot: app-a
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn run ci:pre
+        build:
+          commands:
+            - yarn run ci:build
+        postBuild:
+          commands:
+            - yarn run ci:post
+      artifacts:
+        baseDirectory: public
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - node_modules/**/*
+  - appRoot: app-b
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - yarn run ci:pre
+        build:
+          commands:
+            - yarn run ci:build
+        postBuild:
+          commands:
+            - yarn run ci:post
+      artifacts:
+        baseDirectory: public
+        files:
+          - "**/*"
+      cache:
+        paths:
+          - node_modules/**/*
