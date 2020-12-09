@@ -1,7 +1,3 @@
 # amplify-monorepo-test
 
-## Links
-
-[Set up continuous deployment and hosting for a monorepo with AWS Amplify Console](https://aws.amazon.com/blogs/mobile/set-up-continuous-deployment-and-hosting-for-a-monorepo-with-aws-amplify-console/)
-
-<!-- 1 -->
+Tip: Don't use an amplify.yml file! This method is bugged and did not work for me. It would continuously only use the first appRoot application listed.
