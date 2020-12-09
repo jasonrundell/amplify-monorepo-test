@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/vue"
-  to = "https://monorepo-vue-app.netlify.app"
+  from = "/vue/*"
+  to = "https://monorepo-vue-app.netlify.app/*"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
