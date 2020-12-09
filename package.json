@@ -1,0 +1,21 @@
+{
+  "name": "amplify-monorepo-test",
+  "version": "1.0.0",
+  "description": "Tip: Don't use an amplify.yml file! This method is bugged and did not work for me. It would continuously only use the first appRoot application listed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:gatsby": "yarn --cwd gatsby-app run build",
+    "build:vue": "yarn --cwd vue-app run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonrundell/amplify-monorepo-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonrundell/amplify-monorepo-test/issues"
+  },
+  "homepage": "https://github.com/jasonrundell/amplify-monorepo-test#readme"
+}
